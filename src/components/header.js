@@ -1,38 +1,45 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import NavLinks from '@components/navLinks'
-import { Hamburger, Times, Logo } from '@images/icons'
+import { Hamburger, Times } from '@images/icons'
+import { StyledHeader, Nav, NavbarContainer, NavToggle } from "@styles/sections"
+import Logo from "@components/logo"
+
+import links from '../data/links'
 
 const Header = () => {
   const [isOpen, toggleNav] = useState(false)
 
   return (
-    <header className="header">
-      <div className="wrapper header__nav-container">
+    <StyledHeader className="header">
+      <NavbarContainer className="wrapper header__nav-container">
   
-        <Link to="/" className="header__logo">
-          <Logo />
-        </Link>
+        <Logo />
   
-        <button 
-          id="nav-toggle"
+        <NavToggle 
           onClick={() => toggleNav(!isOpen)}
         >
-          <span className={!isOpen ? 'show' : ''}>
-            <Hamburger />
-          </span>
-
-          <span className={isOpen ? 'show' : ''}>
-            <Times />
-          </span>
-        </button>
+          { isOpen ? <Times /> : <Hamburger /> }
+        </NavToggle>
   
-        <nav className={isOpen ? 'header__nav open' : 'header__nav'}>
-          <NavLinks specialClass='header__nav-list' />
-        </nav>
+        <Nav isOpen={isOpen}>
+          <ul>
+            {
+              links.map(link => (
+                <li key={link.title}>
+                  <Link 
+                    to={link.to}
+                    onClick={() => toggleNav(false)}
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+        </Nav>
   
-      </div>
-    </header>
+      </NavbarContainer>
+    </StyledHeader>
   )
 }
 
