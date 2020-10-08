@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Hamburger, Times } from '@images/icons'
-import { StyledHeader, Nav, NavbarContainer, NavToggle } from "@styles/sections"
-import Logo from "@components/logo"
-import { mixins } from "@styles/global"
+import { StyledHeader, Nav, NavbarContainer, NavToggle } from "./styles"
+import Logo from "@components/Logo"
+import { mixins } from "@globalStyles"
 
-import links from '../data/links'
+import links from '../../data/links'
 
 const Header = () => {
   const [isOpen, toggleNav] = useState(false)

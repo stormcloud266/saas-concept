@@ -34,7 +34,10 @@ export const GlobalStyle = createGlobalStyle`
 
   li { list-style: none; }
 
-  img { width: 100%; }
+  img { 
+    width: 100%;
+    max-height: 50rem;
+  }
 
   a {
     text-decoration: none;
@@ -59,6 +62,10 @@ export const GlobalStyle = createGlobalStyle`
     color: white;
   }
 
+  h1 {
+    font-size: 4rem;
+  }
+
   h2 {
     font-size: 3.6rem;
   }
@@ -67,27 +74,14 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 2.2;
   }
 
-`
-
-export const Wrapper =`
-  width: 100%;
-  max-width: 126rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  margin-left: auto;
-  margin-right: auto; 
-`
-
-export const Section =`
-  padding-top: 14rem;
-  padding-bottom: 14rem;
   @media only screen and (max-width: 56.25em) {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+
+    h1 {
+      font-size: 3.3rem;
+    }
+    h2 {
+      font-size: 2.8rem;
+    }
   }
 
-  @media only screen and (max-width: 37.5em) {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
 `

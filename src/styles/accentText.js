@@ -6,7 +6,6 @@ export const AccentText = styled.p`
   line-height: 1;
   margin-bottom: 1rem;
   letter-spacing: .5px;
-
   ::before {
     content: '';
     display: inline-block;

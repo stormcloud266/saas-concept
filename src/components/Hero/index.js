@@ -1,26 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { StyledHero } from "@styles/sections"
-import { Button, AccentText, Text } from "@styles/elements"
+import { StyledHero } from "./styles"
+import { Button, AccentText, TextBlock, Flex, mixins } from "@globalStyles"
+
 import image from "@images/illustration-1.svg"
 
 const Hero = () => (
-  <StyledHero>
-    <div>
-      <AccentText>Big Boi</AccentText>
+  <StyledHero css={mixins.section}>
 
-      <Text>
-        <h1>Unlock Your Potential with a Massively Large Phone</h1>
+    <Flex>
+      <AccentText>Big Boi</AccentText>
+      <TextBlock>
+        <h1>Unlock Your Potential with Our Massively Large Phones</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos et corrupti eius modi, fugit odio nulla ab culpa mollitia recusandae.</p>
         <Button as={Link} to="/">Get Yours Now</Button>
-      </Text>
-      
-    </div>
+      </TextBlock>
+    </Flex>
 
-    <div>
+    <Flex>
       <img src={image} alt=""/>
-    </div>
+    </Flex>
+
   </StyledHero>
 )
 

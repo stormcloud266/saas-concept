@@ -1,5 +1,5 @@
 import React from "react"
-import { StyledLogo } from "@styles/elements"
+import { StyledLogo } from "./styles"
 
 const Logo = () => (
   <StyledLogo to="/">

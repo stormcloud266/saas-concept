@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Text = styled.div`
+export const TextBlock = styled.div`
   h1 {
     margin-bottom: 2rem;
   }

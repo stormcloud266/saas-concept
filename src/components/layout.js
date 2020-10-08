@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Header from "@components/header"
-import Footer from "@components/footer"
+import Header from "@components/Header"
+import Footer from "@components/Footer"
 
-import { GlobalStyle } from "@styles/global"
+import { GlobalStyle } from "@globalStyles"
 
 const Layout = ({ children }) => (
   <>

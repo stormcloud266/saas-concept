@@ -1,4 +1,4 @@
-export * from './header'
-export * from './hero'
-export * from './footer'
-export * from './seo'
+// export * from './header'
+// export * from './Hero'
+// export * from './footer'
+// export * from './seo'

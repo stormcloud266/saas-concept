@@ -1,8 +1,7 @@
 import styled from "styled-components"
-import { Wrapper } from "@styles/global"
 
 export const StyledHeader = styled.header`
-  /* position: fixed; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
