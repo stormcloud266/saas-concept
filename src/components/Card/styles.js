@@ -5,12 +5,18 @@ export const StyledCard = styled.div`
   flex: 1;
   margin-right: 2rem;
   padding: 6rem 4rem;
-  box-shadow: 0 4px 25px -2px rgba(0,0,0,.45);
+  box-shadow: 0 3px 20px -2px rgba(0,0,0,.45);
   border-radius: 4px;
   max-width: 38rem;
+  transition: all .3s ease;
 
   :last-child {
     margin-right: 0;
+  }
+
+  :hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 6px 30px -2px rgba(0,0,0,.55);
   }
 
   h3 {

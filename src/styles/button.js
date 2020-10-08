@@ -7,4 +7,10 @@ export const Button = styled.button`
   border-radius: 6rem;
   display: inline-block;
   box-shadow: 0 3px 25px rgba(222, 71, 113, .5);
+  transition: all .2s;
+
+  :hover {
+    transform: translateY(-1px);
+    background-color: #c3385f;
+  }
 `

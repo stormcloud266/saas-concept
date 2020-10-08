@@ -1,41 +1,34 @@
 import React from "react"
+import { Link }  from 'gatsby'
+import { StyledFooter, FooterInner, FooterNav } from "./styles"
 import Logo from "@components/Logo"
 import { mixins } from "@globalStyles"
-import { Link}  from 'gatsby'
+import links from '../../data/links'
 
 const Footer = () => (
-  <footer css={mixins.section}>
-    <div css={mixins.wrapper}>
-      
+  <StyledFooter>
+    <FooterInner css={mixins.wrapper}>
+
       <Logo />
-
-      <div className="footer__text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati vitae consectetur.</p>
-
-        <nav className="footer__nav">
+      
+      <FooterNav>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/examples">Examples</Link>
-          </li>
-          <li>
-            <Link to="/">Page</Link>
-          </li>
-          <li>
-            <Link to="/">Page</Link>
-          </li>
-          <li>
-            <Link to="/">Page</Link>
-          </li>
+          {
+            links.map(link => (
+              <li key={link.title}>
+                <Link 
+                  to={link.to}
+                >
+                  {link.title}
+                </Link>
+              </li>
+            ))
+          }
         </ul>
-        </nav>
+      </FooterNav>
 
-      </div>
-
-    </div>
-  </footer>
+    </FooterInner>
+  </StyledFooter>
 )
 
 export default Footer

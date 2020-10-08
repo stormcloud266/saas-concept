@@ -4,15 +4,15 @@ export default [
     title: 'Home'
   },
   {
-    to: '/about',
+    to: '/',
     title: 'About'
   },
   {
-    to: '/services',
+    to: '/',
     title: 'Services'
   },
   {
-    to: '/contact',
+    to: '/',
     title: 'Contact'
   }
 ]

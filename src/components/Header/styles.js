@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 `
 
 export const NavbarContainer = styled.div`
@@ -53,7 +54,7 @@ export const Nav = styled.nav`
     transition: opacity .2s;
 
     position: absolute;
-    background-color: #333;
+    background-color: var(--color-bg);
     top: 0;
     left: 0;
     width: 100%;
@@ -83,6 +84,7 @@ export const Nav = styled.nav`
     a {
       font-size: 2.8rem;
       padding: .5rem 1rem;
+      color: #FFF;
     }
   }
 `

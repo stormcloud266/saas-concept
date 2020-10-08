@@ -10,7 +10,7 @@ const Hero = () => (
   <StyledHero css={mixins.section}>
 
     <Flex>
-      <AccentText>Big Boi</AccentText>
+      <AccentText>One Phone To Rule Them All</AccentText>
       <TextBlock>
         <h1>Unlock Your Potential with Our Massively Large Phones</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos et corrupti eius modi, fugit odio nulla ab culpa mollitia recusandae.</p>

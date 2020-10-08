@@ -1,47 +1,14 @@
-# My Gatsby Template
+# saas-concept
 
-The Gatsby Default Starter with the additions I use on most of my projects.
+[Visit Site](https://big-ol-phone.netlify.app/)
 
-## Overview
+![](https://github.com/stormcloud266/saas-concept/blob/main/screenshot.gif)
 
-**Features**
-* SCSS set up (includes my basic framework)
-* Responsive nav component
-* Minimal footer component
-* SEO component with open graph and Twitter cards
-* GDPR compliant Google Analytics and Facebook Pixel with cookie consent banner
-* Svg icon file
-* Examples page with component and query examples
-* Create page function in gatsby-node
-* Template page starter
+## Styled Components + Gatsby
 
-**Additional Plugins**
-* [gatsby-plugin-sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
-* [node-sass](https://www.npmjs.com/package/node-sass)
-* [gatsby-background-image](https://www.gatsbyjs.com/plugins/gatsby-background-image/)
-* [gatsby-plugin-web-font-loader](https://www.gatsbyjs.com/plugins/gatsby-plugin-web-font-loader/)
-* [dotenv](https://www.npmjs.com/package/dotenv)
-* [gatsby-plugin-sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/)
-* [gatsby-plugin-robots-txt](https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/)
-* [gatsby-plugin-gdpr-cookies](https://www.gatsbyjs.com/plugins/gatsby-plugin-gdpr-cookies/)
-* [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent)
+I wanted to practice using [style cpmonents](https://styled-components.com/) with [GatsbyJS](https://www.gatsbyjs.com/).
 
-## To use this template
+## TODO
 
-### Clone and Git setup
-
-`git clone git@github.com:stormcloud266/my-gatsby-template.git project-name`
-
-`cd project-name`
-
-`git remote remove origin`
-
-`git remote add origin git@github.com:yourGithub/project-name.git`
-
-`git push origin master -u`
-
-### Install and Develop
-
-`npm install`
-
-`gatsby develop`
+* Add SVG background waves
+* Light/dark theme
