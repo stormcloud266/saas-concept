@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Hamburger, Times } from '@images/icons'
 import { StyledHeader, Nav, NavbarContainer, NavToggle } from "@styles/sections"
 import Logo from "@components/logo"
+import { mixins } from "@styles/global"
 
 import links from '../data/links'
 
@@ -11,7 +12,7 @@ const Header = () => {
 
   return (
     <StyledHeader className="header">
-      <NavbarContainer className="wrapper header__nav-container">
+      <NavbarContainer css={mixins.wrapper}>
   
         <Logo />
   

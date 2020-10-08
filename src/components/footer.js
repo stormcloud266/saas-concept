@@ -1,10 +1,11 @@
 import React from "react"
 import NavLinks from '@components/navLinks'
 import Logo from "@components/logo"
+import { mixins } from "@styles/global"
 
 const Footer = () => (
-  <footer className="bg-dark footer">
-    <div className="wrapper footer__inner">
+  <footer css={mixins.section}>
+    <div css={mixins.wrapper}>
       
       <Logo />
 

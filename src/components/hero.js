@@ -11,7 +11,7 @@ const Hero = () => (
       <AccentText>Big Boi</AccentText>
 
       <Text>
-        <h1>Unlock Your Potential with a Massive, Giant Phone</h1>
+        <h1>Unlock Your Potential with a Massively Large Phone</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos et corrupti eius modi, fugit odio nulla ab culpa mollitia recusandae.</p>
         <Button as={Link} to="/">Get Yours Now</Button>
       </Text>

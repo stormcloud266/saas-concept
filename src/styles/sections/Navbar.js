@@ -14,8 +14,6 @@ export const NavbarContainer = styled.div`
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-
-  ${Wrapper};
 `
 
 export const NavToggle = styled.button`
