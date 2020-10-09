@@ -6,7 +6,9 @@
 
 ## Styled Components + Gatsby
 
-I wanted to practice using [style cpmonents](https://styled-components.com/) with [GatsbyJS](https://www.gatsbyjs.com/).
+I wanted to practice using [styled components](https://styled-components.com/) with [GatsbyJS](https://www.gatsbyjs.com/).
+
+Icons are from [Tabler Icons](https://tablericons.com/) and illustrations are from [Undraw](https://undraw.co/illustrations).
 
 ## TODO
 
