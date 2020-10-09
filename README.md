@@ -8,9 +8,8 @@
 
 I wanted to practice using [styled components](https://styled-components.com/) with [GatsbyJS](https://www.gatsbyjs.com/).
 
-Icons are from [Tabler Icons](https://tablericons.com/) and illustrations are from [Undraw](https://undraw.co/illustrations).
+Icons are from [Tabler Icons](https://tablericons.com/) and illustrations are from [Undraw](https://undraw.co/illustrations). I used [SVGR](https://react-svgr.com/playground/) to convert the icons to React components for easy use.
 
 ## TODO
 
 * Add SVG background waves
-* Stop flash of default theme
