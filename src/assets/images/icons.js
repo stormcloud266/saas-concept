@@ -17,6 +17,41 @@ export const Hamburger = () => (
   </svg>
 )
 
+export const Sun = () => (
+  <svg
+    className="prefix__icon prefix__icon-tabler prefix__icon-tabler-sun"
+    width={28}
+    height={28}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="#fff"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M0 0h24v24H0z" stroke="none" />
+    <circle cx={12} cy={12} r={4} />
+    <path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7" />
+  </svg>
+)
+
+export const Moon = () => (
+  <svg
+    className="prefix__icon prefix__icon-tabler prefix__icon-tabler-moon"
+    width={28}
+    height={28}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="#1d1a50"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M0 0h24v24H0z" stroke="none" />
+    <path d="M12 3h.393a7.5 7.5 0 007.92 12.446A9 9 0 1112 2.992z" />
+  </svg>
+)
+
 export const Times = () => (
   <svg
     className="prefix__icon prefix__icon-tabler prefix__icon-tabler-x"

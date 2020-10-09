@@ -5,7 +5,7 @@ export const StyledLogo = styled(Link)`
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: white;
+  color: var(--color-text-headers);
   font-weight: 500;
   position: relative;
   z-index: 999;

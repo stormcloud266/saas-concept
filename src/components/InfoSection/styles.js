@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { FlexContainer, Flex } from "@globalStyles/flexContainer"
 
 export const InfoBlock = styled.section`
-  background-color: ${({ light }) => light ? 'var(--color-bg-light)' : 'var(--color-bg)'};
+  background-color: ${({ light }) => light ? 'var(--color-bg-secondary)' : 'var(--color-bg)'};
 `
 
 export const InfoInner = styled(FlexContainer)`

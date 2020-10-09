@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { Hamburger, Times } from '@images/icons'
-import { StyledHeader, Nav, NavbarContainer, NavToggle } from "./styles"
+import { Hamburger, Times, Sun, Moon } from '@images/icons'
+import { StyledHeader, Nav, NavbarContainer, NavToggle, ThemeToggle } from "./styles"
 import Logo from "@components/Logo"
 import { mixins } from "@globalStyles"
 
 import links from '../../data/links'
 
-const Header = () => {
+const Header = ({ isDark, toggleTheme }) => {
   const [isOpen, toggleNav] = useState(false)
 
   return (
@@ -18,6 +18,7 @@ const Header = () => {
   
         <NavToggle 
           onClick={() => toggleNav(!isOpen)}
+          aria-label="toggle menu"
         >
           { isOpen ? <Times /> : <Hamburger /> }
         </NavToggle>
@@ -36,6 +37,14 @@ const Header = () => {
                 </li>
               ))
             }
+            <li>
+              <ThemeToggle 
+                onClick={() => toggleTheme(!isDark)}
+                aria-label="change light/dark mode"
+              >
+                {isDark ? <Sun /> : <Moon />}
+              </ThemeToggle>
+            </li>
           </ul>
         </Nav>
   

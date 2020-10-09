@@ -3,7 +3,7 @@ import styled from "styled-components"
 // import Logo from "@components/Logo"
 
 export const StyledFooter = styled.footer`
-  background-color: var(--color-bg-light);
+  background-color: var(--color-bg-secondary);
   padding-top: 2rem;
   padding-bottom: 2rem;
 `

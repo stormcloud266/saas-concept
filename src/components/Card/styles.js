@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledCard = styled.div`
-  background-color: var(--color-bg-light);
+  background-color: var(--color-bg-secondary);
   flex: 1;
   margin-right: 2rem;
   padding: 6rem 4rem;

@@ -22,9 +22,20 @@ export const NavToggle = styled.button`
   position: relative;
   z-index: 999;
 
+  svg {
+    stroke: var(--color-text-headers);
+  }
+
   @media only screen and (max-width: 56.25em) {
     display: block;
   }
+`
+
+export const ThemeToggle = styled.button`
+  padding: .5rem;
+  position: relative;
+  z-index: 999;
+
 `
 
 export const Nav = styled.nav`
@@ -84,7 +95,7 @@ export const Nav = styled.nav`
     a {
       font-size: 2.8rem;
       padding: .5rem 1rem;
-      color: #FFF;
+      color: ${props => props.theme.mode === 'dark' ? '#FFFFFF' : 'var(--color-text-headers)'};
     }
   }
 `

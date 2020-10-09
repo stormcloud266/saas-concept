@@ -11,4 +11,4 @@ I wanted to practice using [style cpmonents](https://styled-components.com/) wit
 ## TODO
 
 * Add SVG background waves
-* Light/dark theme
+* Make theme persist
