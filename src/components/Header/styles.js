@@ -35,7 +35,9 @@ export const ThemeToggle = styled.button`
   padding: .5rem;
   position: relative;
   z-index: 999;
-
+  svg {
+    stroke: var(--color-pink);
+  }
 `
 
 export const Nav = styled.nav`

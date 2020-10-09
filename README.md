@@ -13,4 +13,4 @@ Icons are from [Tabler Icons](https://tablericons.com/) and illustrations are fr
 ## TODO
 
 * Add SVG background waves
-* Make theme persist
+* Stop flash of default theme
