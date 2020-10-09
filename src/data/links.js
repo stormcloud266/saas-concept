@@ -4,7 +4,7 @@ export default [
     title: 'Home'
   },
   {
-    to: '/',
+    to: '/page-2',
     title: 'About'
   },
   {
