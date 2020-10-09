@@ -40,8 +40,7 @@ const Header = ({ isDark, themeContext }) => {
             <li>
               <ThemeToggle 
                 onClick={() => themeContext.toggleDark()}
-                // onClick={() => console.log(themeContext)}
-                aria-label="change light/dark mode"
+                aria-label="toggle dark mode"
               >
                 {isDark ? <Sun /> : <Moon />}
               </ThemeToggle>

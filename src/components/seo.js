@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({
   title = `Working with Styled Components and Gatsby`,
-  description = `This is a description`,
+  description = `A simple Gatsby starter using styled components with dark/light modes.`,
   url = `https://big-ol-phone.netlify.app`
 }) => {
 
