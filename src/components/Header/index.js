@@ -7,7 +7,7 @@ import { mixins } from "@globalStyles"
 
 import links from '../../data/links'
 
-const Header = ({ isDark, toggleTheme }) => {
+const Header = ({ isDark, themeContext }) => {
   const [isOpen, toggleNav] = useState(false)
 
   return (
@@ -39,7 +39,8 @@ const Header = ({ isDark, toggleTheme }) => {
             }
             <li>
               <ThemeToggle 
-                onClick={() => toggleTheme(!isDark)}
+                onClick={() => themeContext.toggleDark()}
+                // onClick={() => console.log(themeContext)}
                 aria-label="change light/dark mode"
               >
                 {isDark ? <Sun /> : <Moon />}

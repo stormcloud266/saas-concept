@@ -2,10 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --color-text: ${props => props.theme.mode === 'dark' ? '#a5a4bb' : '#5a5967'};
-    --color-text-headers: ${props => props.theme.mode === 'dark' ? '#FFFFFF' : '#1d1a50'};
-    --color-bg: ${props => props.theme.mode === 'dark' ? '#151425' : 'white'};
-    --color-bg-secondary: ${props => props.theme.mode === 'dark' ? '#252438' : '#f4f3fb'};
+    --color-text: ${props => props.theme.colorText};
+    --color-text-headers: ${props => props.theme.colorTextHeaders};
+    --color-bg: ${props => props.theme.colorBg};
+    --color-bg-secondary: ${props => props.theme.colorBgSecondary};
     --color-pink: #de4771;
   }
 

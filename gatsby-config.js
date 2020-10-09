@@ -26,6 +26,13 @@ module.exports = {
         path: `${__dirname}/static`,
       },
     },
+    {
+      resolve: `gatsby-styled-components-dark-mode`,
+      options: {
+          light: require(`${__dirname}/src/styles/theme.js`).lightTheme,
+          dark: require(`${__dirname}/src/styles/theme.js`).darkTheme,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
