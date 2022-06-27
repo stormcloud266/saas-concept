@@ -1,13 +1,7 @@
 import React from "react"
-
-import Layout from "@components/layout"
-import Seo from "@components/Seo"
-import Hero from "@components/Hero"
-import InfoSection from "@components/InfoSection"
-
+import { Layout, Seo, Hero, InfoSection, CardsContainer } from "@components"
 import image2 from "@images/illustration-2.svg"
 import image3 from "@images/illustration-3.svg"
-import CardsContainer from "@components/CardsContainer"
 
 const IndexPage = () => (
   <Layout>

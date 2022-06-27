@@ -1,10 +1,7 @@
-import React, { useContext } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStyledDarkMode } from "gatsby-styled-components-dark-mode"
-
-import Header from "@components/Header"
-import Footer from "@components/Footer"
-
+import { Footer, Header } from "@components"
 import { GlobalStyle } from "@globalStyles"
 
 const Layout = ({ children }) => {
