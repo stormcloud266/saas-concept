@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "@components/layout"
-import SEO from "@components/seo"
+import Seo from "@components/Seo"
 import Hero from "@components/Hero"
 import InfoSection from "@components/InfoSection"
 
@@ -11,8 +11,7 @@ import CardsContainer from "@components/CardsContainer"
 
 const IndexPage = () => (
   <Layout>
-
-    <SEO />
+    <Seo />
 
     <Hero />
 
@@ -33,7 +32,6 @@ const IndexPage = () => (
       body={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illo fugiat ab amet! Praesentium alias earum nisi est in temporibus, vel unde. Hic alias qui aspernatur consectetur similique nobis perspiciatis.`}
       image={image3}
     />
-
   </Layout>
 )
 

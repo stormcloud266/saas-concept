@@ -1,18 +1,20 @@
-export default [
+const links = [
   {
-    to: '/',
-    title: 'Home'
+    to: "/",
+    title: "Home",
   },
   {
-    to: '/page-2',
-    title: 'About'
+    to: "/page-2",
+    title: "About",
   },
   {
-    to: '/',
-    title: 'Services'
+    to: "/",
+    title: "Services",
   },
   {
-    to: '/',
-    title: 'Contact'
-  }
+    to: "/",
+    title: "Contact",
+  },
 ]
+
+export default links

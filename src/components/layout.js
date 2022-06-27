@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import PropTypes from "prop-types"
-import { ThemeManagerContext } from "gatsby-styled-components-dark-mode"
+import { useStyledDarkMode } from "gatsby-styled-components-dark-mode"
 
 import Header from "@components/Header"
 import Footer from "@components/Footer"
@@ -8,15 +8,12 @@ import Footer from "@components/Footer"
 import { GlobalStyle } from "@globalStyles"
 
 const Layout = ({ children }) => {
-  const themeContext = useContext(ThemeManagerContext)
+  const { isDark, toggleDark } = useStyledDarkMode()
 
   return (
     <>
       <GlobalStyle />
-      <Header 
-        isDark={themeContext.isDark} 
-        themeContext={themeContext} 
-      />
+      <Header isDark={!!isDark} toggleDark={toggleDark} />
       <main>{children}</main>
       <Footer />
     </>
