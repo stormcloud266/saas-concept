@@ -1,22 +1,11 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({
   title = `Working with Styled Components and Gatsby`,
   description = `A simple Gatsby starter using styled components with dark/light modes.`,
   url = `https://big-ol-phone.netlify.app`,
 }) => {
-  // const data = useStaticQuery(graphql`
-  //   query BannerImage {
-  //     file(name: { eq: "banner" }) {
-  //       publicURL
-  //     }
-  //   }
-  // `)
-
-  const data = ""
-
   return (
     <Helmet>
       <title>{title}</title>
@@ -26,14 +15,14 @@ const Seo = ({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      {/* <meta name="twitter:image" content={url + data.file.publicURL} /> */}
+      <meta name="twitter:image" content={url + "/banner.png"} />
 
       {/***********  open graph ***********/}
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      {/* <meta property="og:image" content={url + data.file.publicURL} /> */}
+      <meta property="og:image" content={url + "/banner.png"} />
     </Helmet>
   )
 }
