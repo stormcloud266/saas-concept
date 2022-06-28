@@ -1,20 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
-import {
-  Button,
-  AccentText,
-  TextBlock,
-  Flex,
-  FlexContainer,
-  mixins,
-} from "@globalStyles"
+import { AccentText, Button, FlexContainer, TextBlock } from "@components"
+import { mixins } from "@globalStyles"
 
 import image from "@images/illustration-1.svg"
 
 const Hero = () => (
   <StyledHero css={mixins.section}>
-    <Flex>
+    <FlexItem>
       <AccentText>One Phone To Rule Them All</AccentText>
       <TextBlock>
         <h1>Unlock Your Potential with Our Massively Large Phones</h1>
@@ -22,26 +15,29 @@ const Hero = () => (
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos et
           corrupti eius modi, fugit odio nulla ab culpa mollitia recusandae.
         </p>
-        <Button as={Link} to="/">
-          Get Yours Now
-        </Button>
+        <Button to="/">Get Yours Now</Button>
       </TextBlock>
-    </Flex>
+    </FlexItem>
 
-    <Flex>
+    <FlexItem>
       <img src={image} alt="" />
-    </Flex>
+    </FlexItem>
   </StyledHero>
 )
 
 export default Hero
+
+const FlexItem = styled.div`
+  flex: 1;
+  width: 100%;
+`
 
 const StyledHero = styled(FlexContainer)`
   min-height: 100vh;
   padding-top: 5rem;
 
   @media only screen and (max-width: 56.25em) {
-    ${Flex}:nth-child(1) {
+    ${FlexItem} {
       order: 2;
       margin-top: 4rem;
     }

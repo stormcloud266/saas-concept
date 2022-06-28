@@ -1,28 +1,23 @@
 import React from "react"
 import styled from "styled-components"
-import {
-  AccentText,
-  TextBlock,
-  Flex,
-  FlexContainer,
-  mixins,
-} from "@globalStyles"
+import { AccentText, TextBlock, FlexContainer } from "@components"
+import { mixins } from "@globalStyles"
 
 const InfoSection = ({ light, textLeft, accentText, title, body, image }) => (
   <InfoBlock light={light} css={mixins.section}>
     <InfoInner textLeft={textLeft}>
-      <Flex>
+      <FlexItem>
         <img src={image} alt="" />
-      </Flex>
+      </FlexItem>
 
-      <Flex>
+      <FlexItem>
         <AccentText>{accentText}</AccentText>
 
         <TextBlock>
           <h2>{title}</h2>
           <p>{body}</p>
         </TextBlock>
-      </Flex>
+      </FlexItem>
     </InfoInner>
   </InfoBlock>
 )
@@ -34,28 +29,49 @@ const InfoBlock = styled.section`
     light ? "var(--color-bg-secondary)" : "var(--color-bg)"};
 `
 
+const FlexItem = styled.div`
+  flex: 1;
+  width: 100%;
+`
+
 const InfoInner = styled(FlexContainer)`
-  ${Flex} {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ${mixins.wrapperSmOnTab};
+
+  ${FlexItem} {
     max-width: 56rem;
   }
 
-  ${Flex}:first-child {
+  ${FlexItem}:first-of-type {
     order: ${({ textLeft }) => (textLeft ? 2 : 1)};
     margin-left: ${({ textLeft }) => (textLeft ? "4rem" : 0)};
   }
 
-  ${Flex}:nth-child(2) {
+  ${FlexItem}:nth-of-type(2) {
     order: ${({ textLeft }) => (textLeft ? 1 : 2)};
     margin-left: ${({ textLeft }) => (textLeft ? 0 : "4rem")};
   }
 
   @media only screen and (max-width: 56.25em) {
-    ${Flex}:first-child, ${Flex}:nth-child(2) {
+    flex-direction: column;
+
+    ${FlexItem}:first-child, ${FlexItem}:nth-child(2) {
       margin-left: 0;
       order: unset;
     }
-    ${Flex}:first-child {
+    ${FlexItem}:first-child {
       margin-bottom: 4rem;
+    }
+
+    img {
+      max-width: 36rem;
+      max-height: 36rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
     }
   }
 `
