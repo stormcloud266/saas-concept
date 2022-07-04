@@ -1,7 +1,18 @@
+import React from "react"
 import styled from "styled-components"
-import { mixins } from "./mixins"
+import { mixins } from "@globalStyles"
 
-export const FlexContainer = styled.div`
+const FlexContainer = ({ children, className, ...props }) => {
+  return (
+    <Container className={className} {...props}>
+      {children}
+    </Container>
+  )
+}
+
+export default FlexContainer
+
+const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +21,7 @@ export const FlexContainer = styled.div`
 
   @media only screen and (max-width: 56.25em) {
     flex-direction: column;
-    
+
     img {
       max-width: 36rem;
       max-height: 36rem;
@@ -19,10 +30,4 @@ export const FlexContainer = styled.div`
       display: block;
     }
   }
-
-`
-
-export const Flex = styled.div`
-  flex: 1;
-  width: 100%;
 `

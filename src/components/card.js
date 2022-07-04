@@ -1,14 +1,25 @@
+import React from "react"
 import styled from "styled-components"
 
-export const StyledCard = styled.div`
+const Card = ({ icon, title, body }) => (
+  <StyledCard>
+    <span>{icon}</span>
+    <h3>{title}</h3>
+    <p>{body}</p>
+  </StyledCard>
+)
+
+export default Card
+
+const StyledCard = styled.div`
   background-color: var(--color-bg-secondary);
   flex: 1;
   margin-right: 2rem;
   padding: 6rem 4rem;
-  box-shadow: 0 3px 20px -2px rgba(0,0,0,.45);
+  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.45);
   border-radius: 4px;
   max-width: 38rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   :last-child {
     margin-right: 0;
@@ -16,7 +27,7 @@ export const StyledCard = styled.div`
 
   :hover {
     transform: translateY(-1rem);
-    box-shadow: 0 6px 30px -2px rgba(0,0,0,.55);
+    box-shadow: 0 6px 30px -2px rgba(0, 0, 0, 0.55);
   }
 
   h3 {
