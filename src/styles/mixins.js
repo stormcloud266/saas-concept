@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components"
 
 export const mixins = {
   wrapper: css`
@@ -31,6 +31,20 @@ export const mixins = {
     @media only screen and (max-width: 37.5em) {
       padding-top: 8rem;
       padding-bottom: 8rem;
+    }
+  `,
+  button: css`
+    background-color: var(--color-pink);
+    color: #fff;
+    padding: 1.4rem 4rem;
+    border-radius: 6rem;
+    display: inline-block;
+    box-shadow: 0 3px 25px rgba(222, 71, 113, 0.5);
+    transition: all 0.2s;
+
+    :hover {
+      transform: translateY(-1px);
+      background-color: #c3385f;
     }
   `,
 }
